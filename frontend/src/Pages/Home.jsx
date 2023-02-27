@@ -14,7 +14,7 @@ function Home() {
     try {
       setLoading(true);
       let data = await axios.post(
-        "http://localhost:8080/userFetch"
+        "https://cointask.onrender.com/userFetch"
       );
       setLoading(false);
       toast({
@@ -34,7 +34,7 @@ function Home() {
     try {
       setLoading(true);
       let data = await axios.delete(
-        "http://localhost:8080/userDelete"
+        "https://cointask.onrender.com/userDelete"
       );
 
       setLoading(false);

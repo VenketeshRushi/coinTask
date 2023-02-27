@@ -28,7 +28,7 @@ function UserDetails() {
   const [totalPages, setTotalPages] = useState(10);
   async function getUsers(page, filter) {
     let res = await axios.get(
-      `http://localhost:8080/userDetails?page=${page}&limit=10&filter=${filter}`
+      `https://cointask.onrender.com/userDetails?page=${page}&limit=10&filter=${filter}`
     );
     return res;
   }
@@ -79,7 +79,6 @@ function UserDetails() {
         <>
           <HStack
             m={4}
-            //  border="1px solid red"
             justifyContent="flex-end"
             gap="20px"
           >
